@@ -91,7 +91,7 @@ function createMap(earthquakes) {
 
         for (var i = 0; i < magnitudes.length; i++) {
             div.innerHTML +=
-                '<i style="background:' + chooseColor(magnitudes[i]) + ';"></i> ' +
+                '<i style="background:' + chooseColor(magnitudes[i] + 1) + ';"></i> ' +
                 magnitudes[i] + (magnitudes[i + 1] ? '&ndash;' + magnitudes[i + 1] + '<br>' : '+');
         }
 
